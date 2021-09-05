@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" blendMode="DIFFERENCE" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.espol.Controller.MenuController">
+   <children>
+      <Label fx:id="regresar" />
+      <MenuBar prefHeight="28.0" prefWidth="600.0">
+        <menus>
+          <Menu fx:id="menuOpciones" mnemonicParsing="false" text="Opciones">
+            <items>
+              <MenuItem fx:id="registrarVendedor" mnemonicParsing="false" onAction="#RegistrarVendedor" text="RegistrarNuevoVendedor" />
+                  <MenuItem fx:id="IngresarVehiculo" mnemonicParsing="false" onAction="#IngresarVehiculo" text="IngresarNuevoVehiculo" />
+                  <MenuItem fx:id="AceptarOferta" mnemonicParsing="false" onAction="#AceptarOferta" text="AceptarOferta" />
+                  <MenuItem fx:id="RegistrarComprador" mnemonicParsing="false" onAction="#RegistrarComprador" text="RegistrarNuevoComprador" />
+                  <MenuItem fx:id="OfertarVehiculo" mnemonicParsing="false" onAction="#OfertarVehiculo" text="OfertarVehiculo" />
+                  <MenuItem fx:id="perfil" mnemonicParsing="false" onAction="#perfil" text="Perfil" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Cerrar">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#regresar_sesion" text="Sesion" />
+                  <MenuItem mnemonicParsing="false" onAction="#salir" text="Programa" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
